@@ -24,6 +24,7 @@ public class Rock {
 
     public void shot(Vector2 speed){
         this.activity = true;
+        this.speed = new Vector2(0, 0);
         this.speed.set(speed);
     }
 
