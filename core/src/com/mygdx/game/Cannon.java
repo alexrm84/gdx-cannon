@@ -25,6 +25,7 @@ public class Cannon {
         if (!VectorGame.rock.activity){
             shot();
         }
+        mousePosition = new Vector2(0,0);
     }
 
     public void shot(){

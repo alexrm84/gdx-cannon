@@ -24,7 +24,7 @@ public class Rock {
 
     public void shot(Vector2 speed){
         this.activity = true;
-        this.speed = speed;
+        this.speed.set(speed);
     }
 
     public void render(SpriteBatch batch) {
@@ -41,6 +41,7 @@ public class Rock {
                 speed.x/=10;
             }
             if (speed.x<5 || position.x>1300 || position.y>740){
+                this.speed = new Vector2(0, 0);
                 departure();
             }
         }
